@@ -42,7 +42,7 @@ def CountingSubsetWithGivenSum(arr,n,s):
             
 n=3#int(input("Enter No of No:"))
 arr=[3,4,6]#sorted(list(map(int,input("Enter array:").split(" "))))
-d=1#int(input("Enter Different:"))
+d=1#int(input("Enter Targetted Sum:"))
 s1=(sum(arr)+d)//2
 l=[[-1]*(s1+1) for i in range(n+1)]
 ans=CountingSubsetWithGivenSum(arr,n,s1)

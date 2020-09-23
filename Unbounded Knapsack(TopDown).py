@@ -84,12 +84,12 @@ class knapsack:
         x.add_row(self.elementAdded)
         print(x)
 
-n=4#int(input("Enter no of Element:"))    #no of input
-lst=[[0,0],[10,1],[8,2],[12,3],[16,4]]
-#print("Enter profit And Corresponding weight:")
-#for i in range(n):  
-#    lst.append(list(map(int,input().split(" "))))
-W=6#int(input("Enter knapsack capacity:"))      #weight capability of knapsack
+n=int(input("Enter no of Element:"))    #no of input
+lst=[[0,0]]
+print("Enter profit And Corresponding weight:")
+for i in range(n):  
+    lst.append(list(map(int,input().split(" "))))
+W=int(input("Enter knapsack capacity:"))      #weight capability of knapsack
 knapsack1=knapsack(n,lst,W)
 print("KnapsackTable:")
 knapsack1.showknapsacktable()

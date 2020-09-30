@@ -45,8 +45,8 @@ l=[[-1]*(s+1) for i in range(n+1)]
 
 ans=MinCoinChange(arr,n,s)
 print("Min no Of Coin:{}".format(ans))
-x=PrettyTable()
+"""x=PrettyTable()
 x.field_names=[i for i in range(s+1)]
 for i in range(n+1):
     x.add_row(l[i])
-print(x)
+print(x)"""

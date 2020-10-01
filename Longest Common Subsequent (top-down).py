@@ -35,7 +35,7 @@ def Eleadded():
     i=m
     j=n
     ans_str=""
-    while i!=0 or j!=0:
+    while i>0 and j>0:
         if x[i-1]==y[j-1]:
             ans_str+=y[j-1]
             i-=1

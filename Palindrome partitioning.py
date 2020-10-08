@@ -37,7 +37,9 @@ def PalindromePartitioning(s,i,j):
             return l[i][j]
         final_res=maxsize
         for k in range(i,j):
-            res=PalindromePartitioning(s,i,k)+PalindromePartitioning(s,k+1,j)+1
+            Left=PalindromePartitioning(s,i,k)
+            Right=PalindromePartitioning(s,k+1,j)
+            res=Left+Right+1
             if res<final_res:
                 final_res=res
                 k_values[i][j]=k
